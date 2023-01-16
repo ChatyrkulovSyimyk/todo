@@ -1,0 +1,139 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background: skyblue;
+}
+
+.add-input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid navy;
+  margin-right: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  color: navy;
+}
+
+.btn {
+  font-size: 18px;
+  border: 1px solid navy;
+  background-color: navy;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.4rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transition: 1s all ease;
+  background-color: skyblue;
+  color: navy;
+  border: 1px solid navy;
+  animation-name: button;
+  animation-duration: 1s;
+}
+
+@keyframes button {
+  from {
+    transform: scale(60%);
+  }
+}
+
+.nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+  border: 2px solid navy;
+  margin-top: 0.2rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.nav .delete {
+  color: red;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.nav p {
+  margin: 0 0.4rem;
+  color: navy;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav span {
+  margin: 0 0.4rem;
+  color: #333;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.nav input {
+  cursor: pointer;
+}
+
+input:checked + div {
+  text-decoration: line-through;
+}
+.form {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form textarea {
+  width: 230px !important;
+  height: 100px;
+  padding: 0.4rem;
+  margin: 1rem 0;
+  resize: none;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid navy;
+}
+
+.btn-open {
+  font-size: 20px;
+  font-weight: 700;
+  color: navy;
+  background-color: skyblue;
+  border-radius: 20px;
+  border: 2px solid navy;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.btn-open:hover {
+  transition: 3s all ease;
+  background-color: navy;
+  color: skyblue;
+  animation-name: btn;
+  animation-duration: 3.5s;
+}
+
+@keyframes btn {
+  30% {
+    transform: rotateX(360deg);
+    color: navy;
+    background-color: skyblue;
+  }
+  50% {
+    background-color: navy;
+    color: skyblue;
+    transform: rotateX(0deg);
+  }
+}
